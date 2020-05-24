@@ -1,25 +1,33 @@
 {
-   "heading":"Querying from multiple tables - Joins",
+   "heading":"Managing tables",
    "data":[
       {
-         "subheading":"Inner join t1 and t2",
-         "code":"SELECT c1, c2 FROM t1 INNER JOIN t2 ON condition;"
+         "subheading":"Create a new table with three columns",
+         "code":"CREATE TABLE table_name (id INT PRIMARY KEY,  name VARCHAR NOT NULL,  price INT DEFAULT 0);"
       },
       {
-         "subheading":"Left join t1 and t1",
-         "code":"SELECT c1, c2 FROM t1 LEFT JOIN t2 ON condition;"
+         "subheading":"Delete the table from the database",
+         "code":"DROP TABLE t ;"
       },
       {
-         "subheading":"Right join t1 and t2",
-         "code":"SELECT c1, c2 FROM t1 RIGHT JOIN t2 ON condition;"
+         "subheading":"Add a new column to the table",
+         "code":"ALTER TABLE t ADD column;"
       },
       {
-         "subheading":"Perform full outer join",
-         "code":"SELECT c1, c2 FROM t1 FULL OUTER JOIN t2 ON condition;"
+         "subheading":"Drop column c from the table",
+         "code":"ALTER TABLE t DROP COLUMN c ;"
       },
       {
-         "subheading":"Cartesian product of rows in tables",
-         "code":"SELECT c1, c2 FROM t1 CROSS JOIN t2;"
+         "subheading":"Rename a table from t1 to t2",
+         "code":"ALTER TABLE t1 RENAME TO t2;"
+      },
+      {
+         "subheading":"Rename column c1 to c2",
+         "code":"ALTER TABLE t1 RENAME c1 TO c2 ;"
+      },
+      {
+         "subheading":"Remove all data in a table",
+         "code":"TRUNCATE TABLE t;"
       }
    ]
 }

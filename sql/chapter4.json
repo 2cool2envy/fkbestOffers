@@ -1,0 +1,26 @@
+{
+    "heading":"Querying from multiple tables - Joins",
+    "data":[
+       {
+          "subheading":"Inner join t1 and t2",
+          "code":"SELECT c1, c2 FROM t1 INNER JOIN t2 ON condition;"
+       },
+       {
+          "subheading":"Left join t1 and t1",
+          "code":"SELECT c1, c2 FROM t1 LEFT JOIN t2 ON condition;"
+       },
+       {
+          "subheading":"Right join t1 and t2",
+          "code":"SELECT c1, c2 FROM t1 RIGHT JOIN t2 ON condition;"
+       },
+       {
+          "subheading":"Perform full outer join",
+          "code":"SELECT c1, c2 FROM t1 FULL OUTER JOIN t2 ON condition;"
+       },
+       {
+          "subheading":"Cartesian product of rows in tables",
+          "code":"SELECT c1, c2 FROM t1 CROSS JOIN t2;"
+       }
+    ]
+ }
+ 

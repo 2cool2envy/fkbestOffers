@@ -1,0 +1,26 @@
+{
+    "heading":"Querying data from a table",
+    "data":[
+       {
+          "subheading":"Query data in columns c1, c2 from a table",
+          "code":"SELECT c1, c2 FROM t;"
+       },
+       {
+          "subheading":"Query all rows and columns from a table",
+          "code":"SELECT * FROM t;"
+       },
+       {
+          "subheading":"Query data and filter rows with a condition",
+          "code":"SELECT c1, c2 FROM t WHERE condition;"
+       },
+       {
+          "subheading":"Query distinct rows from a table",
+          "code":"SELECT DISTINCT c1 FROM t WHERE condition;"
+       },
+       {
+          "subheading":"Sort the result set in ascending or descending order",
+          "code":"SELECT c1, c2 FROM t ORDER BY c1 ASC [DESC];"
+       }
+    ]
+ }
+ 

@@ -1,25 +1,25 @@
 {
-   "heading":"Querying data from a table",
+   "heading":"SQL - Overview",
    "data":[
       {
-         "subheading":"Query data in columns c1, c2 from a table",
-         "code":"SELECT c1, c2 FROM t;"
+         "subheading":"What is SQL?",
+         "code":"SQL is the standard language for Relational Database System. All the Relational Database Management Systems (RDMS) like MySQL, MS Access, Oracle, Sybase, Informix, Postgres and SQL Server use SQL as their standard database language."
       },
       {
-         "subheading":"Query all rows and columns from a table",
-         "code":"SELECT * FROM t;"
+         "subheading":"What is RDBMS?",
+         "code":"RDBMS stands for Relational Database Management System. RDBMS is the basis for SQL.The data in an RDBMS is stored in database objects which are called as tables. This table is basically a collection of related data entries and it consists of numerous columns and rows."
       },
       {
-         "subheading":"Query data and filter rows with a condition",
-         "code":"SELECT c1, c2 FROM t WHERE condition;"
+         "subheading":"Standard language",
+         "code":"SQL is a language to operate databases; it includes database creation, deletion, fetching rows, modifying rows, etc. SQL is an ANSI (American National Standards Institute) standard language, but there are many different versions of the SQL language."
       },
       {
-         "subheading":"Query distinct rows from a table",
-         "code":"SELECT DISTINCT c1 FROM t WHERE condition;"
+         "subheading":"SQL Process",
+         "code":"When you are executing an SQL command for any RDBMS, the system determines the best way to carry out your request and SQL engine figures out how to interpret the task."
       },
       {
-         "subheading":"Sort the result set in ascending or descending order",
-         "code":"SELECT c1, c2 FROM t ORDER BY c1 ASC [DESC];"
+         "subheading":"Main SQL Process Components",
+         "code":"Query Dispatcher , Optimization Engines , Classic Query Engine, SQL Query Engine"
       }
    ]
 }
