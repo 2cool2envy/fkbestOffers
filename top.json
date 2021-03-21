@@ -1,15 +1,15 @@
 [
     {
-      name: 'Asian Paints Advanced Liquid Hand Sanitizer',
-      desc: 'Asian Paints Viroprotek Advanced Liquid Hand Sanitizer (Clove oil Fortified)-1 Liter',
-      img: 'https://images-na.ssl-images-amazon.com/images/I/817FYj%2BYlGL._SL1500_.jpg',
-      link: 'https://amzn.to/3lzTj7j'
+      'name': 'Asian Paints Advanced Liquid Hand Sanitizer',
+      'desc': 'Asian Paints Viroprotek Advanced Liquid Hand Sanitizer (Clove oil Fortified)-1 Liter',
+      'img': 'https://images-na.ssl-images-amazon.com/images/I/817FYj%2BYlGL._SL1500_.jpg',
+      'link': 'https://amzn.to/3lzTj7j'
     },
     {
-      name: 'Lizol Disinfectant',
-      desc: 'Lizol Disinfectant Surface & Floor Cleaner Liquid, Citrus - 2 L | Kills 99.9% Germs',
-      img: 'https://images-na.ssl-images-amazon.com/images/I/71fRGtw2JuL._SL1000_.jpg',
-      link: 'https://amzn.to/3lzTqQa'
+      'name': 'Lizol Disinfectant',
+      'desc': 'Lizol Disinfectant Surface & Floor Cleaner Liquid, Citrus - 2 L | Kills 99.9% Germs',
+      'img': 'https://images-na.ssl-images-amazon.com/images/I/71fRGtw2JuL._SL1000_.jpg',
+      'link': 'https://amzn.to/3lzTqQa'
     },
 
   ]
