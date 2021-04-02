@@ -1,64 +1,64 @@
 {
 	"button": [{
-			'text': 'D.C Office Hoshiarpur Phone number',
-			'code': 'dc'
+			"text": "D.C Office Hoshiarpur "phone" number",
+			"code": "dc"
 		}, {
-			'text': ' Street Light Complaints : 1800 180 3580',
-			'code': 'street'
+			"text": " Street Light Complaints : 1800 180 3580",
+			"code": "street"
 		},
 		{
-			'text': 'Hoshiarpur Police Helpline',
-			'code': 'police'
+			"text": "Hoshiarpur Police Helpline",
+			"code": "police"
 		}
 	],
 	"street": [{
-			name: "Deputy Commissioner",
-			phone: "01882-220301"
+			"name": "Deputy Commissioner",
+			"phone": "01882-220301"
 		},
 		{
-			name: "Addl. Deputy Commissioner (G)",
-			phone: "01882-220306"
+			"name": "Addl. Deputy Commissioner (G)",
+			"phone": "01882-220306"
 		},
 		{
-			name: "Sub Divisional Magistrate, Dasuya",
-			phone: "01883-285022"
+			"name": "Sub Divisional Magistrate, Dasuya",
+			"phone": "01883-285022"
 		},
 		{
-			name: "Sub Divisional Magistrate, Mukerian",
-			phone: "01883-244441"
+			"name": "Sub Divisional Magistrate, Mukerian",
+			"phone": "01883-244441"
 		},
 		{
-			name: "Sub Divisional Magistrate, Garhshankar",
-			phone: "01884-282022"
+			"name": "Sub Divisional Magistrate, Garhshankar",
+			"phone": "01884-282022"
 		},
 		{
-			name: "District Revenue Officer",
-			phone: "01882-220412"
+			"name": "District Revenue Officer",
+			"phone": "01882-220412"
 		},
 	],
 	"police": [{
-			name: "Police Help Line",
-			phone: "181"
+			"name": "Police Help Line",
+			"phone": "181"
 		},
 		{
-			name: "Women Helpline",
-			phone: "1091"
+			"name": "Women Helpline",
+			"phone": "1091"
 		},
 		{
-			name: "Police Control Room",
-			phone: "121"
+			"name": "Police Control Room",
+			"phone": "121"
 		},
 		{
-			name: "Police Control Room",
-			phone: "01882 247506"
+			"name": "Police Control Room",
+			"phone": "01882 247506"
 		},
 		{
-			name: "Police Control Room",
-			phone: "01882 247508"
+			"name": "Police Control Room",
+			"phone": "01882 247508"
 		},
 		{
-			name: "NRI",
-			phone: "0172 2560042"
+			"name": "NRI",
+			"phone": "0172 2560042"
 		}
 	]
 }
