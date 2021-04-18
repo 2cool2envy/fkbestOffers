@@ -1,7 +1,9 @@
-[
+{
+"list" : [
     "Chapter -1 : What is SQL ?",
     "Chapter -2 : Managing Tables",
     "Chapter -3 : Querying Data",
     "Chapter -4 : Querying Multiple Data",
     "Chapter -5 : SQL Operators",
 ]
+}
