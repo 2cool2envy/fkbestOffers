@@ -1,0 +1,50 @@
+[
+    {
+        "productId": 1,
+        "type":"card",
+        "name": "Bag",
+        "description": "",
+        "price": "",
+        "embeddedMessage": "",
+        "imagesCollection": [
+            "https://placehold.co/600",
+            ""
+        ]
+    },
+    {
+        "productId": 2,
+        "type":"card",
+        "name": "Bag2",
+        "description": "",
+        "price": "",
+        "embeddedMessage": "",
+        "imagesCollection": [
+            "https://placehold.co/601",
+            ""
+        ]
+    },
+    {
+        "productId": 3,
+        "type":"banner",
+        "name": "Bag2",
+        "description": "",
+        "price": "",
+        "embeddedMessage": "",
+        "imagesCollection": [
+            "https://placehold.co/601",
+            ""
+        ]
+    },
+    {
+        "productId": 4,
+        "type":"carousel",
+        "name": "Bag2",
+        "description": "",
+        "price": "",
+        "embeddedMessage": "",
+        "imagesCollection": [
+            "https://placehold.co/701",
+            ""
+        ]
+    }
+]
