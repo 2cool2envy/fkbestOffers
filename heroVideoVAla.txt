@@ -5,6 +5,25 @@ const chrome = require('selenium-webdriver/chrome');
 const options = new chrome.Options();
 options.addArguments('--incognito');
 
+const videoUrlArray = [
+    'https://www.youtube.com/shorts/hkblnzgDUe8',
+    'https://www.youtube.com/shorts/Y73QJieFFDQ',
+    'https://www.youtube.com/shorts/7dGGjzJXpEs',
+    'https://www.youtube.com/shorts/aGLdmAidT2w',
+    'https://www.youtube.com/shorts/c6aBaGCbfzE',
+    'https://www.youtube.com/shorts/_QaXtHaf0Ps',
+    'https://www.youtube.com/watch?v=nqNyMlZ0bag',
+    'https://www.youtube.com/shorts/7F3SA9XCoBQ',
+    'https://www.youtube.com/watch?v=mdaYYbgcLds',
+    'https://www.youtube.com/shorts/ImtuoG_-lQE',
+    'https://www.youtube.com/watch?v=kxrE_Vm5a0I'
+
+]
+
+// const videoUrl = 'https://www.youtube.com/shorts/hkblnzgDUe8';
+
+
+
 function sleepRandom() {
     const ms = Math.floor(Math.random() * (20000 - 3000 + 1)) + 3000;
     console.log(`Sleeping for ${ms / 1000} seconds...`);
@@ -35,14 +54,17 @@ async function clickPlayButton(driver) {
     }
 }
 
-(async function playYouTubeVideo() {
+async function playYouTubeVideo() {
+
+    const getRandomInDecimal = (Math.random() * videoUrlArray.length) + 1
+    const videoUrl = videoUrlArray[Math.floor(getRandomInDecimal)]
+
     let driver = await new Builder()
         .forBrowser('chrome')
         .setChromeOptions(options)
         .build();
 
     try {
-        const videoUrl = 'https://www.youtube.com/shorts/hkblnzgDUe8';
         await driver.get(videoUrl);
 
         // Close any popups or overlays like ads or cookie banners
@@ -61,4 +83,10 @@ async function clickPlayButton(driver) {
     } finally {
         await driver.quit();
     }
-})();
+}
+
+playYouTubeVideo(); // ✅ Correct: we're passing a function now
+
+setInterval(() => {
+    playYouTubeVideo(); // ✅ Correct: we're passing a function now
+}, 90000);
