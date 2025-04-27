@@ -1,0 +1,64 @@
+const { Builder, By, until } = require('selenium-webdriver');
+const chrome = require('selenium-webdriver/chrome');
+
+// Chrome options: Open in incognito mode
+const options = new chrome.Options();
+options.addArguments('--incognito');
+
+function sleepRandom() {
+    const ms = Math.floor(Math.random() * (20000 - 3000 + 1)) + 3000;
+    console.log(`Sleeping for ${ms / 1000} seconds...`);
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function closeOverlayIfExists(driver) {
+    try {
+        // Close any overlays (like cookie banners or popups)
+        const closeBtnSelector = 'button.ytp-close-button, button.ytp-ad-skip-button, .ytp-ad-overlay-close-button';
+        const closeButton = await driver.findElement(By.css(closeBtnSelector));
+        await driver.executeScript("arguments[0].click();", closeButton);
+        console.log("Overlay or ad closed.");
+    } catch (err) {
+        console.log("No overlay or ad found.");
+    }
+}
+
+async function clickPlayButton(driver) {
+    try {
+        const playButtonSelector = 'button.ytp-large-play-button.ytp-button'; // YouTube's large play button
+        await driver.wait(until.elementLocated(By.css(playButtonSelector)), 10000);
+        const playButton = await driver.findElement(By.css(playButtonSelector));
+        await playButton.click();
+        console.log("Play button clicked.");
+    } catch (err) {
+        console.log("Play button not found or already played.");
+    }
+}
+
+(async function playYouTubeVideo() {
+    let driver = await new Builder()
+        .forBrowser('chrome')
+        .setChromeOptions(options)
+        .build();
+
+    try {
+        const videoUrl = 'https://www.youtube.com/shorts/hkblnzgDUe8';
+        await driver.get(videoUrl);
+
+        // Close any popups or overlays like ads or cookie banners
+        await closeOverlayIfExists(driver);
+
+        // Wait for the video element to be visible (max 10 seconds)
+        const videoSelector = 'video.html5-main-video';
+        await driver.wait(until.elementLocated(By.css(videoSelector)), 10000);
+
+        // Try to click the large play button
+        await clickPlayButton(driver);
+
+        // Sleep for a random time between 3 and 20 seconds to simulate viewing time
+        await sleepRandom();
+
+    } finally {
+        await driver.quit();
+    }
+})();
