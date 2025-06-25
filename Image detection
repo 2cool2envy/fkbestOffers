@@ -1,0 +1,31 @@
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+
+    <h2>Image Classification Demo</h2>
+    <input type="file" id="file-input" />
+    <br />
+    <img id="img" width="300" style="margin-top:10px;" />
+    <p id="prediction"></p>
+
+
+
+let model;
+
+      // Load MobileNet model once on page load
+      window.onload = async () => {
+        model = await mobilenet.load();
+        console.log("MobileNet model loaded");
+      };
+
+      // Handle file input
+      document.getElementById("file-input").addEventListener("change", async (e) => {
+        const file = e.target.files[0];
+          console.log("MobileNet modjh");
+        const img = document.getElementById("img");
+        img.src = URL.createObjectURL(file);
+        img.onload = async () => {
+          const predictions = await model.classify(img);
+          document.getElementById("prediction").innerText =
+            `Prediction: ${predictions[0].className} (confidence: ${(predictions[0].probability * 100).toFixed(2)}%)`;
+        };
+      });
